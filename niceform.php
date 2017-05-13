@@ -123,7 +123,7 @@ i{
 
 </body>
 
-<!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script>
 	$('#button1').click(function()
 		{
@@ -149,15 +149,5 @@ i{
                 });
 			}
 		}
-</script>-->
-<!--<h1> Login / Registration form </h1>
-	<form method="post" action="login.php" name="form1"> <!--action="login.php"
-		<table>
-		<input placeholder="Username" type="text" name="usr"></td></tr>
-		<input placeholder="Password" type="password" name="pswd"></td></tr>
-		<tr><td><input type="submit" name="login" value="Login" id="button1"></td>
-		<td><input id ="button2" type="submit" name="reg" value="Register"></td></tr>
-		</table>
-	</form>
-</center>-->
+</script>
 </html>
