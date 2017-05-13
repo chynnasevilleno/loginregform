@@ -68,7 +68,6 @@ input:focus, input:valid {
   background-position: 0 0;
 }
 input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
-  <!--color: #FF4081;-->
   color: #212121; 
   font-size: 11px;
   visibility: visible !important;
@@ -128,15 +127,15 @@ input[type="radio"]:checked + label span {
   transition: background-color 0.2s linear;
 }
 #gender{
-	text-align: left;
-	padding-left: 70px;
+    text-align: left;
+    padding-left: 70px;
     padding-top: 0px;
     margin-bottom: 15px;
     margin-top: -20;
 
 }
 #display{
-	padding-top: 40px;
+     padding-top: 40px;
 }
 </style>
 </head>
@@ -227,9 +226,9 @@ input[type="radio"]:checked + label span {
 			else{
 			alert("SUCCESS!");
 				$.ajax({
-                    type: 'POST',
-                    url: 'process.php',
-                    data: { fname: first , 
+				    type: 'POST',
+				    url: 'process.php',
+				    data: { fname: first , 
 							mname: middle, 
 							lname: last, 
 							addrss: address, 
@@ -254,42 +253,23 @@ input[type="radio"]:checked + label span {
 			{
 				if(passVal[x] == pass.charAt(x).toUpperCase())
 				{
-					numcount++;
+					numcount++;//counts how many numbers are present
 				}
 				for(var i=0;i<passVal.length;i++) 
 				{
 					if(/[A-Z]/.test(pass.charAt(i))) 
-						capcount++;
+						capcount++; //counts how many capital letters are present
 				}
 			}
-			if(capcount>0 && numcount>0){
+			if(capcount>0 && numcount>0){ //if capital letters and numbers are present, validate password
 				return true;
 			}
 			else
 			{
-				return false;
+				return false; //invalidates password
 			}
 			
 		}
-			/*var a = "this is a letter holder"; 
-			var isLetter = 0; //0 means false, 1 means true
-			var isNumber = 0;
-			var isSpecialchar = 0;
-			for (var i = 0; i < pass.length; i++)
-			{
-					a = pass[i];
-					if(a>=65 && a<=90 || a>=97 && a<=122) //checks the ASCII number if its in the range
-							isLetter = 1;
-					if(a>=48&&a<=57)
-							isNumber = 1;
-					if(a<48||a>57&&a<65||a>90&&a<97||a>122)
-							isSpecialchar = 1;
-			}
-			
-			if(isLetter == 1 && isNumber == 1&& isSpecialchar ==1)
-					return true;
-			else
-					return false;*/
 
 		function validWebsite(web)
 		{
@@ -298,10 +278,10 @@ input[type="radio"]:checked + label span {
 			else
 				return false;
                         
-        }
+        	}
                         
-        function validEmail( email)
-        {
+		function validEmail( email)
+		{
 			if(email[0] == "@")
 							return false;
 			for(var i = 0; i < email.length; i++)
